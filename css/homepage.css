@@ -95,6 +95,19 @@ section img{
     text-shadow: 0 0 20px #eeeeee, 0 0 30px #0a3047, 0 0 40px #0a3047, 0 0 50px #0a3047, 0 0 60px #0a3047, 0 0 70px #0a3047, 0 0 80px #0a3047;
     transform: translateX(-1100px);
 }
+@keyframes no-glow {
+    from{
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #0a3047, 0 0 40px #0a3047, 0 0 50px #0a3047, 0 0 60px #0a3047, 0 0 70px #0a3047, 0 0 80px #0a3047;
+    }
+    to{
+        text-shadow: none;
+    }
+}
+.no-glow{
+    animation-name: no-glow;
+    animation-duration: 1.5s;
+}
+
 section img#front{
     z-index: 10;
 }
@@ -104,19 +117,20 @@ section img#middle{
 .sec{
     z-index: 11;
     position: relative;
-    padding: 30px 100px;
+    padding: 35px 100px;
     background: #000000;
     display: block;
 }
-.sec h2{
-    
-    padding-left: 3.5em;
-    padding-bottom: em;
-    font-size: 5em;
+h2.before{
+    padding: 40px;
+    padding-bottom: 2.5em;
+}
+.sec h2.about{ 
+    padding-left: 3.1em;
+    padding-bottom: .5em;
+    font-size: 4.7em;
     margin-bottom: 10px;
     color: white;
-    white-space: nowrap;
-    font-family: 'Anonymous Pro', monospace;
 }
 
 .sec p{
