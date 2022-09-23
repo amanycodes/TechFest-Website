@@ -6,6 +6,7 @@ let front = document.getElementById("front")
 let text = document.getElementById("text")
 let static = document.getElementById("static")
 let value = this.window.scrollY
+let h2 = document.querySelector(".h2")
 window.addEventListener('scroll', function(){
     let value = this.window.scrollY
     stars.style.left = value * 0.25 + 'px'
