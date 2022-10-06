@@ -1,0 +1,151 @@
+body {
+    --color-primary: #009579;
+    --color-primary-dark: #007f67;
+    --color-secondary: #43ab86;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+    --color-background: rgb(255, 255, 255);
+
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: linear-gradient(to bottom right,#26fefd,#408baa,#001e36,#040517);
+    background-size: cover;
+    display: flex;
+}
+.container {
+    width: 30vw;
+    max-width:600px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 2);
+    border-radius: var(--border-radius);
+    background: var(--color-background);
+    z-index: 2; 
+    align-items: center;
+}
+
+.container, 
+.input,
+.button {
+    font: 500 1rem 'Rubik', sanserif;
+} 
+
+.form--hidden {
+    display: none;
+}
+
+.form > *:first-child {
+    margin-top: 0;
+}
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.message--success {
+    color: var(--color-success);
+}
+
+.message--error {
+    color: var(--color-error);
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: var(--color-background);
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.input:focus {
+    border-color: var(--color-primary);
+    background: var(--color-background);
+}
+
+.input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+
+.button:hover {
+    background: var(--color-primary-dark);
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.text {
+    text-align: center;
+}
+
+.link {
+    color: var(--color-secondary);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 4em;
+    text-align: center;
+}
+
+.title-container{
+    position: relative;
+    padding: 5em;
+    margin-top: 0px;
+    z-index: -1;
+    background-color: #001e36;
+}
+
+.card {
+    display: block;
+    align-items: center;
+}
+
