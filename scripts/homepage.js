@@ -7,6 +7,8 @@ let text = document.getElementById("text")
 let static = document.getElementById("static")
 let h2 = document.querySelector(".h2")
 let value = this.window.scrollY
+let social_h3 = document.getElementById('social-h3')
+let s_button = document.querySelector('.s-button')
 window.addEventListener('scroll', function(){
     let value = this.window.scrollY
     stars.style.left = value * 0.5 + 'px'
@@ -26,20 +28,11 @@ window.addEventListener('scroll', function(){
     }else if(value >=490 && value < 710){
         text.style.marginTop = (value-300)* 2.2 +'px'
         text.style.zIndex = '12'
+        static.style.zIndex - '8'
     }else if(value >= 710 && value < 750){
         text.style.marginRight = ((value-710)*7) + 'px'
         text.style.zIndex = '12'
-        h2.classList.add("auto-commplete", "about")
-        h2.classList.remove("before")
     }else if(value >=750){
-        text.classList.add('no-glow')
-        text.style.textShadow = 'none'
+        static.style.transform = 'translateX(-2000px)';
     }
-})
-var typed = new Typed(".auto-complete", {
-    strings: ["    ", "About", "What is" , "About","What is", "About" ,"What is", "About","What is", "About", "What is","About","What is", "About"],
-    
-    typeSpeed: 100,
-    backSpeed: 100,
-    loop: true
 })
