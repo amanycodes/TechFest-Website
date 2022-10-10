@@ -14,16 +14,16 @@ document.addEventListener("DOMContentLoaded", () =>{
         e.preventDefault
         loginForm.classList.add("form--hidden");
         createAccountForm.classList.remove("form--hidden");
-        let heading = document.querySelector('.title')
-        heading.textContent = 'create account'
+        // let heading = document.querySelector('.title')
+        // heading.textContent = 'create account'
     })
 
     document.querySelector("#linkLogin").addEventListener("click", e=>{
         e.preventDefault
         loginForm.classList.remove("form--hidden");
         createAccountForm.classList.add("form--hidden");
-        let heading = document.querySelector('.title')
-        heading.textContent = 'login'
+        // let heading = document.querySelector('.title')
+        // heading.textContent = 'login'
     })
 
     loginForm.addEventListener("submit", e=> {
