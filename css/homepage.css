@@ -46,18 +46,29 @@ header ul{
 header ul li{
     list-style: none;
     margin-left: 20px;
+    
 }
 
 header ul li a{
     text-decoration: none;
     padding: 6px 15px;
-    color: white;
+    color: #ffffff;
     border-radius: 20px;
+    border: 2px solid white;
+    background-color: transparent;
 }
 
-header ul li a:hover, .active{
+header ul li a:hover{
+    transition: .25s;
     background: white;
     color: #0a3047;
+    border: none;
+    
+}
+
+.logo{
+    width: 100px;
+    
 }
 
 section{
@@ -123,10 +134,10 @@ section img#middle{
     background: #000000;
     
 }
-h2.before{
+/* h2.before{
     padding: 40px;
     padding-bottom: 2.5em;
-}
+} */
 .sec p{
     text-align: center;
     padding: 0px 200px;
@@ -139,10 +150,15 @@ h2.before{
     font-size: 4em;
 }
 #card{
-    z-index: 11;
-    padding: 60px 100px;
-    margin: 100px;
-    background: #c11818;
+    text-align: center;
+    padding: 100px 100px;
+    margin: 50px 300px 100px 300px;
+    background: rgba(90, 250, 255, 0.2);
+    border: 2px solid rgb(159, 159, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 20px #eeeeee, 0 0 30px #0a3047, 0 0 40px #0a3047, 0 0 50px #0a3047, 0 0 30px #0a3047, 0 0 70px #0a3047, 0 0 40px #0a3047;
+    transition: 1.25s;
+    color: white;
 }
 #preloader{
     display: flex;
